@@ -8,6 +8,8 @@ import Fload from './desk.png';
 import House from './house.png';
 import Heart from './hearts.svg';
 import Logo from './logos.png';
+import Dev from './dev.png';
+import artboard from './artboard.png';
 
 const logo = {
   width: 90,
