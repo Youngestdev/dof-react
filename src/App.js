@@ -8,7 +8,7 @@ import Fload from './desk.png';
 import House from './house.png';
 import Heart from './hearts.svg';
 import Logo from './logos.png';
-import Dev from './dev.png';
+import dev from './dev.png';
 import artboard from './artboard.png';
 
 const logo = {
@@ -98,24 +98,24 @@ class AppPage extends React.Component {
           </View>
 
           <Container fluid>
-            <Row className="py-5">
+            <Row className="py-4">
               <Col md="12" className="text-center">
                 <section className="text-center my-5">
                   <Row>
                     <Col md="4">
                       <Fa icon="area-chart" size="3x" className="red-text"/>
                       <h5 className="font-weight-bold my-4">Analytics</h5>
-                      <p className="grey-text mb-md-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
+                      <p className="mb-md-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
                     </Col>
                     <Col md="4">
                       <Fa icon="book" size="3x" className="cyan-text"/>
                       <h5 className="font-weight-bold my-4">Tutorials</h5>
-                      <p className="grey-text mb-md-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
+                      <p className="mb-md-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
                     </Col>
                     <Col md="4">
                       <Fa icon="comments-o" size="3x" className="orange-text"/>
                       <h5 className="font-weight-bold my-4">Support</h5>
-                      <p className="grey-text mb-md-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
+                      <p className="mb-md-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
                     </Col>
                   </Row>
                 </section>
@@ -137,7 +137,7 @@ class AppPage extends React.Component {
                             <Fa icon="mail-forward" size="lg" className="indigo-text"/>
                           </Col>
                           <Col xl="10" md="11" size="10">
-                            <p className="grey-text">
+                            <p>
                             We know that it takes a village to raise a coder! 
                             There are a lot of great technical resources for software developers out there, but not a lot of places you can go where you can talk about your life as a programmer with other people who really understand what’s got you feeling like a coding genius or like you’re surrounded by idiots. It's why we created our virtual village called Dev Of Future. 
                             Join us and we'll lead you to the future!
@@ -154,29 +154,18 @@ class AppPage extends React.Component {
 
             <Container>
               <Row className="py-5">
-                <Col md="12" className="text-center">
-                  <section className="my-5">
-                    <Row>
-                      <Col lg="7">
-                        <Row className="mb-3">
-                          <Col size="1">
-                            <Fa icon="mail-forward" size="lg" className="indigo-text"/>
-                          </Col>
-                          <Col xl="10" md="11" size="10">
-                            <p className="grey-text">
-                            We know that it takes a village to raise a coder! 
-                            There are a lot of great technical resources for software developers out there, but not a lot of places you can go where you can talk about your life as a programmer with other people who really understand what’s got you feeling like a coding genius or like you’re surrounded by idiots. It's why we created our virtual village called Dev Of Future. 
-                            Join us and we'll lead you to the future!
-                            </p>
-                          </Col>
-                        </Row>
-                      </Col>
-                      <Col lg="5" className="text-center text-lg-left">
-                        <img  className="img-fluid" src={House} alt="Sample image" />
-                      </Col>
-                    </Row>
-                  </section>
-                </Col>
+                <section>
+                  <Row>
+                    <Col lg="7" md="6" style={{marginTop: 120}}>
+                      We know that it takes a village to raise a coder! 
+                      There are a lot of great technical resources for software developers out there, but not a lot of places you can go where you can talk about your life as a programmer with other people who really understand what’s got you feeling like a coding genius or like you’re surrounded by idiots. It's why we created our virtual village called Dev Of Future. 
+                      Join us and we'll lead you to the future!
+                    </Col>
+                    <Col lg="5" md="6" className="text-center text-lg-left">
+                      <img  className="img-fluid" src={dev} alt="Sample image" style={{height: 400}}/>
+                    </Col>
+                  </Row>
+                </section>
               </Row> 
             </Container>
             <hr />
@@ -187,15 +176,15 @@ class AppPage extends React.Component {
                   <section className="my-5">
                     <Row>
                       <Col lg="5" className="text-center text-lg-left">
-                        <img  className="img-fluid" src={House} alt="Sample image" />
+                        <img  className="img-fluid" src={artboard} alt="Sample image" />
                       </Col>
                       <Col lg="7">
                         <Row className="mb-3">
                           <Col size="1">
                             <Fa icon="mail-forward" size="lg" className="indigo-text"/>
                           </Col>
-                          <Col xl="10" md="11" size="10">
-                            <p className="grey-text">
+                          <Col xl="10" md="11" size="10" style={{marginTop: 120}}>
+                            <p>
                             We know that it takes a village to raise a coder! 
                             There are a lot of great technical resources for software developers out there, but not a lot of places you can go where you can talk about your life as a programmer with other people who really understand what’s got you feeling like a coding genius or like you’re surrounded by idiots. It's why we created our virtual village called Dev Of Future. 
                             Join us and we'll lead you to the future!
