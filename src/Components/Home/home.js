@@ -3,11 +3,11 @@ import 'mdbreact/dist/css/mdb.css';
 import React from 'react';
 import { Collapse, Mask, Row, Col, Fa, Button, View, Container, FormInline } from 'mdbreact';
 import Footer from '../Footer/Footer';
-import Fload from '../../desk.png';
-import House from '../../house.png';
-import Heart from '../../hearts.svg';
-import dev from '../../dev.png';
-import artboard from '../../artboard.png';
+import Fload from '../../../public/images/desk.png';
+import House from '../../../public/images/house.png';
+import Heart from '../../../public/images/hearts.svg';
+import dev from '../../../public/images/dev.png';
+import artboard from '../../../public/images/artboard.png';
 import Navigation from '../Layout/Navigation'
 
 class Home extends React.Component {

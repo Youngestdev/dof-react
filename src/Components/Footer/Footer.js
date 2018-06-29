@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Row, Footer, Fa } from 'mdbreact';
+import { Container, Footer, Fa } from 'mdbreact';
 import './Footer'
 
 const footer = {
