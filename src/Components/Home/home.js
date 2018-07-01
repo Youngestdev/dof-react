@@ -3,11 +3,7 @@ import 'mdbreact/dist/css/mdb.css';
 import React from 'react';
 import { Collapse, Mask, Row, Col, Fa, Button, View, Container, FormInline } from 'mdbreact';
 import Footer from '../Footer/Footer';
-import Fload from '../../../public/images/desk.png';
-import House from '../../../public/images/house.png';
-import Heart from '../../../public/images/hearts.svg';
-import dev from '../../../public/images/dev.png';
-import artboard from '../../../public/images/artboard.png';
+import { House, Fload, dev,  artboard, Heart} from '../Layout/Images';
 import Navigation from '../Layout/Navigation'
 
 class Home extends React.Component {
@@ -26,7 +22,7 @@ class Home extends React.Component {
                   <hr className="hr-light"/>
                   <h6 className="mb-4">A vast amount of the knowledge that would be valuable to many people is currently only 
                     available to a few — either locked in people's heads, or only accessible to select groups. We want to connect the people who have knowledge to the people who need it, to bring together people with different perspectives so they can understand each other better, and to empower everyone to share their knowledge for the benefit of the rest of the world.</h6>
-                  <Button color="white">JOIN THE CROWD</Button>
+                  <Button color="white"><a href="/Register">JOIN THE CROWD</a></Button>
                   {/* <Button outline color="white">Learn More</Button> */}
                 </div>
                 <Col md="6" xl="5" className="mt-xl-5">
