@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import { Input, Button, Container, Navbar, NavbarNav, NavItem, NavLink} from 'mdbreact';
 // import Link from 'react-router-dom/Link';
@@ -12,30 +13,39 @@ const styles = {
     // width: 600
 }
 
+=======
+import React from "react";
+import { Input, Button, Container } from "mdbreact";
+
+const styles = {
+  marginLeft: "auto",
+  marginRight: "auto",
+  marginTop: "20%",
+  width: 600
+};
+>>>>>>> f9de0fb47799a77f30643e72937e3d2ec1e7f6bd
 class Login extends React.Component {
+  constructor(props) {
+    super(props);
 
-    constructor(props) {
-        super(props)
+    this.state = {
+      username: "",
+      password: ""
+    };
+  }
 
-        this.state = {
-            username: '',
-            password: '',
-        }
-    }
+  handleInputChange = event => {
+    const target = event.target;
+    const name = target.name;
 
-    handleInputChange = (event) => {
-        const target = event.target;
-        const name = target.name;
-    
-        this.setState({
-          [name]: target.value
-        });
-    }
+    this.setState({
+      [name]: target.value
+    });
+  };
 
-    handleLogin() {
-            
-    }
+  handleLogin() {}
 
+<<<<<<< HEAD
     render() {
         return(
             <div>
@@ -61,6 +71,38 @@ class Login extends React.Component {
             </div>
         );
     }
+=======
+  render() {
+    return (
+      <Container style={styles}>
+        <form>
+          <p className="h5 text-center mb-4">Log in</p>
+          <Input
+            label="Your name"
+            icon="user"
+            group
+            type="email"
+            validate
+            error="wrong"
+            success="right"
+            onChange={this.handleInputChange}
+          />
+          <Input
+            label="Your password"
+            icon="lock"
+            group
+            type="password"
+            validate
+            onChange={this.handleInputChange}
+          />
+          <div className="text-center">
+            <Button color="deep-orange">Sign up</Button>
+          </div>
+        </form>
+      </Container>
+    );
+  }
+>>>>>>> f9de0fb47799a77f30643e72937e3d2ec1e7f6bd
 }
 
 export default Login;
