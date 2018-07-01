@@ -154,7 +154,7 @@ render() {
               <NavItem>
                     {button1}
               </NavItem>
-                <NavItem className="d-none d-md-inline" style={{paddingTop: 5}}>
+                <NavItem className="d-none d-md-inline" style={{paddingTop: 25}}>
                     <strong>Dashboard, welcome ...</strong>
                 </NavItem>
               </NavbarNav>
@@ -170,12 +170,12 @@ render() {
                 </NavItem>
                 <NavItem>
                   <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                    <DropdownToggle nav caret> <div className="d-none d-md-inline">Actions</div></DropdownToggle>
+                    <DropdownToggle nav caret> <div className="d-none d-md-inline">USer Profile Picture here.</div></DropdownToggle>
                     <DropdownMenu right>
-                      <DropdownItem href="#!">Action</DropdownItem>
-                      <DropdownItem href="#!">Another Action</DropdownItem>
-                      <DropdownItem href="#!">Something else here</DropdownItem>
-                      <DropdownItem href="#!">Something else here</DropdownItem>
+                      <DropdownItem href="#!">Profile</DropdownItem>
+                      <DropdownItem href="#!">Edit Profile</DropdownItem>
+                      <DropdownItem href="/">Logout</DropdownItem>
+                      {/* <DropdownItem href="#!">Something else here</DropdownItem> */}
                     </DropdownMenu>
                   </Dropdown>
                 </NavItem>
