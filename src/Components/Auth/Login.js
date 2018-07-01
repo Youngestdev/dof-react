@@ -1,12 +1,17 @@
 import React from 'react'
-import { Input, Button, Container } from 'mdbreact';
+import { Input, Button, Container, Navbar, NavbarNav, NavItem, NavLink, NavbarBrand } from 'mdbreact';
+// import Link from 'react-router-dom/Link';
+import { BrowserRouter as Router } from 'react-router-dom'
+import Logo from '../../logos.png'
+import './Auth.css'
 
 const styles = {
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginTop: '20%',
-    width: 600
+    marginTop: '1%',
+    // width: 600
 }
+
 class Login extends React.Component {
 
     constructor(props) {
@@ -33,16 +38,27 @@ class Login extends React.Component {
 
     render() {
         return(
+            <div>
+            <img src={Logo} alt="Logo" className="text-center mb-4"/>
+            <Navbar fixed="top" >
+                <NavbarNav right>
+                    <NavItem>
+                        <NavLink to=""><Button>Home</Button></NavLink>
+                        </NavItem>
+                        </NavbarNav>
+                        </Navbar>
             <Container style={styles}>
                 <form>
                     <p className="h5 text-center mb-4">Log in</p>
                     <Input label="Your name" icon="user" group type="email" validate error="wrong" success="right" onChange={this.handleInputChange}/>
                     <Input label="Your password" icon="lock" group type="password" validate onChange={this.handleInputChange}/>
                     <div className="text-center">
-                        <Button color="deep-orange">Sign up</Button>
+                        <Button color="deep-orange">Log In</Button> <br />
+                        <b>Don't have an account yet ?. </b> <a href="/Register">Register</a>
                     </div>
                 </form>
             </Container>
+            </div>
         );
     }
 }
