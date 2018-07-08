@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-import 'bootstrap/dist/css/bootstrap.css';
-import 'mdbreact/dist/css/mdb.css';
-import React from 'react';
-import { Collapse, Mask, Row, Col, Fa, Button, View, Container, FormInline } from 'mdbreact';
-import Footer from '../Footer/Footer';
-import { House, Fload, dev,  artboard, Heart} from '../Layout/Images';
-import Navigation from '../Layout/Navigation'
-=======
 import "bootstrap/dist/css/bootstrap.css";
 import "mdbreact/dist/css/mdb.css";
 import React from "react";
@@ -28,7 +19,6 @@ import Heart from "../../../public/images/hearts.svg";
 import dev from "../../../public/images/dev.png";
 import artboard from "../../../public/images/artboard.png";
 import Navigation from "../Layout/Navigation";
->>>>>>> f9de0fb47799a77f30643e72937e3d2ec1e7f6bd
 
 class Home extends React.Component {
   render() {
@@ -40,29 +30,11 @@ class Home extends React.Component {
             <Container>
               <Row>
                 <div className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5">
-<<<<<<< HEAD
                   <h1 className="h1-responsive font-weight-bold mt-sm-5">Together we create new generation of developers</h1>
                   <hr className="hr-light"/>
                   <h6 className="mb-4">A vast amount of the knowledge that would be valuable to many people is currently only 
                     available to a few — either locked in people's heads, or only accessible to select groups. We want to connect the people who have knowledge to the people who need it, to bring together people with different perspectives so they can understand each other better, and to empower everyone to share their knowledge for the benefit of the rest of the world.</h6>
                   <Button color="white"><a href="/Register">JOIN THE CROWD</a></Button>
-=======
-                  <h1 className="h1-responsive font-weight-bold mt-sm-5">
-                    Together we create new generation of developers
-                  </h1>
-                  <hr className="hr-light" />
-                  <h6 className="mb-4">
-                    A vast amount of the knowledge that would be valuable to
-                    many people is currently only available to a few — either
-                    locked in people's heads, or only accessible to select
-                    groups. We want to connect the people who have knowledge to
-                    the people who need it, to bring together people with
-                    different perspectives so they can understand each other
-                    better, and to empower everyone to share their knowledge for
-                    the benefit of the rest of the world.
-                  </h6>
-                  <Button color="white">JOIN THE CROWD</Button>
->>>>>>> f9de0fb47799a77f30643e72937e3d2ec1e7f6bd
                   {/* <Button outline color="white">Learn More</Button> */}
                 </div>
                 <Col md="6" xl="5" className="mt-xl-5">

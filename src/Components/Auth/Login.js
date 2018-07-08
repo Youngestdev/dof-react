@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react'
 import { Input, Button, Container, Navbar, NavbarNav, NavItem, NavLink} from 'mdbreact';
 // import Link from 'react-router-dom/Link';
@@ -13,17 +12,6 @@ const styles = {
     // width: 600
 }
 
-=======
-import React from "react";
-import { Input, Button, Container } from "mdbreact";
-
-const styles = {
-  marginLeft: "auto",
-  marginRight: "auto",
-  marginTop: "20%",
-  width: 600
-};
->>>>>>> f9de0fb47799a77f30643e72937e3d2ec1e7f6bd
 class Login extends React.Component {
   constructor(props) {
     super(props);
